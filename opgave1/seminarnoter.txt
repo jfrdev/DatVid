@@ -1,0 +1,88 @@
+### GRUPPE 1 ###
+- Introduktion
+- Datalogi overfor Computer Science
+- Computersikkerhed (væsentligt fokus i ACM)
+
+ACM
+- Web og Datanet
+- DiMS
+
+- Projektarbeje og systemudvikling
+- Algoritmer
+
+- Datalagring og databaser
+- HCI -> Naur peger på som en af de første
+
+## Comments ##
+- Naur har en ide om at gå fra det enkelte til det mere og mere krævende
+    -> Oversigt over emnerne viser dette
+    -> Kontra 2008 modellen som fragmentere emnerne
+- Naur har kort været inde på sikkerhed
+
+
+### GRUPPE 2 ###
+- Grundlag
+    -> Kilder
+    -> Formål
+
+- Formål: En måde at skabe en eksistensberittigelse for faget for sig selv som
+  videnskab og område.
+
+- Tidsperspektiv
+
+- "Konkretisering" mod "basal omfang"
+
+## Comments ##
+- En stor del af det er ifølge Naur projektbaseret.
+
+
+### GRUPPE 3 ###
+- Emnefokuseret
+- Peter Naur: Datalogi kan sammenkobles med andre studieretninger som f.eks.
+  humaniora og økonomi
+- Curriculum '08: Datalogi er en naturvidenskab og selvstændig studie
+- ACM handler ikke om hvordan datarepræsenteres, men om hvordan man programmere.
+
+- Naur: Datalogi som skoleopgradelse
+    -> afmystificering af IT
+    -> inspiration til karriervalg
+- Naur: datalogiske genskabelser af virkeligheden
+- CSC: Projektarbejde tidligt i studieforløb
+    -> motivation og inspiration til karrierevalg
+
+- Naur: Menneske/maskine kommunikation vs interaktion
+
+### GRUPPE 4 ###
+- Lighed, Naur og ACM: datalogien giver et værktøj til at løse problemstillinger
+- Forskel, Naur: Datalogi bør indgå som grundfag i folkeskolen på linje med
+  matematik og sprog
+            ACM:
+- Forskel, Naur: Datalogien står ikke alene med sin egen ophøjede berettigelse.
+  Datalogiske færdigheder skal dyrkes men faget har sit væsentligt formål at
+  bidrage til andre fag
+            ACM: Kun datalogiske færdigheder, Snævre det ind
+- Forskel, Naur: Applikationsudvikling er essentiel, kræver mere end blot
+  strukturerede løsninger
+            ACM: Nævner applikationsudvikling, men der er intet projektfag som
+            formål, skal udledes ud af de specifikke fag!
+- Forskel, Naur: Beskriver faget ud fra en opdeling baseret på egenskaber ved
+  den data og de dataprocesser der behandles
+            ACM: Beskriver faget ud fra en opdeling af metoder og principper i
+            databehandling
+- Både og, Naur: Studerende tiltrækkes ved projektarbejde, der viser, hvordan
+  datalogi kan anvendes
+            ACM: Krisen skal løses ved at vise hvad datalogien kan fx gennem
+            temaer som spil, sikkerhed, web, robotter etc.
+
+### Comments ###
+- ACM skriver meget lidt og uforpligtende om projektarbejde, men skriver det dog
+  som et mål.
+
+
+### GRUPPE 5 ###
+- Tilgang til uddannelse
+    - Naur, skal integreres i hele uddannelsessystemet. Men ser det som "læren
+      om data".
+    - ACM, computing crisis, prøver at komme fra universitetsniveau
+
+- SAME SAME SAME zzzZZZzzz

@@ -5,28 +5,20 @@
 \usepackage[utf8x]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[danish]{babel}
-%\usepackage{courier, fourier}
 \usepackage{libertine}
-%\usepackage[pdftex]{graphicx}
-%\usepackage{float}
-%\usepackage[table,x11names]{xcolor}
-%\usepackage{mdwlist}
 \usepackage[parfill]{parskip}
-
-
-%\linespread{1.2}
-
-%\setcounter{secnumdepth}{2}
-%\setcounter{tocdepth}{2}
+\usepackage{ragged2e}
 
 \widowpenalty=1000
 \clubpenalty=1000
 
-\setlength{\parskip}{3ex plus 2ex minus 2ex}
+\newcommand{\citat}[2]{\begin{justify}\textit{``#1''}\hspace{0.1cm}\footnote{#2}\end{justify}}
 
-\newcommand{\citat}[2]{\vspace{0.1cm}\newline\textit{``#1''}\hspace{0.1cm}\footnote{#2}\vspace{0.1cm}\newline}
+\title{Gruppeopgave 1}
+\author{Henrik Bendt (191191)\\Jens Fredskov (240191)\\Naja Wulff Mottelson (xx1088)}
 
 \begin{document}
+\maketitle
 \section{Indledning}
 Rapporten forsøger at beskrive og sammenligne de mest væsentlige punkter fra de
 tre givne artikler. Vi har derfor valgt at fremhæve dels de forskellige
@@ -34,7 +26,7 @@ synspunkter på faget datalogi/computer science og dels de forskelle og ligheder
 der er mellem fagene af henholdsvis Peter Naurs fortolkning, datalogi, og den
 amerikanske fortolkning, computer science.  Generelt om sammenligningerne skal
 man huske på, at artiklerne er fra henholdsvis slutningen af 60'erne og 2008,
-altså fra meget forskellige tider, i hvert fald ift. IT, og derfor er også deres
+altså fra meget forskellige tider, i hvert fald i forhold til IT, og derfor er også deres
 grundlag forskelligt. Peter Naur skulle lave et udkast til hans idé om faget
 datalogi (som han selv insisterede på skulle hede sådan), altså et helt nyt fag,
 mens curriculum 2008 er en opdatering/forbedring af computer science og bygger
@@ -60,24 +52,24 @@ for en akademisk disciplin. Et centralt punkt i Peter Naurs tekst her er da ogs�
 opfattelsen af datamatens rolle i denne forbindelse. Som det pointeres i
 tekstens indledning ses datamater som:
 \citat{[...] datamanipulatorer, og ikke i første række som regnemaskiner.}
-{Ibid. s. 10}. 
+{Ibid. s. 10} 
  
 \subsection{Databegrebet}
 Et nærliggende spørgsmål bliver i denne kontekst hvad præcies der menes med
 ordet ``data''. Naur fremhæver selv den internationale defintion af ordet som:
-\citat{[...]enhver repræsentation af fakta eller idéer på en formaliseret måde, som
-kan kommunikeres eller manipuleres ved en eller anden proces.}{Ibid. s. 10}.
+\citat{[...] enhver repræsentation af fakta eller idéer på en formaliseret måde, som
+kan kommunikeres eller manipuleres ved en eller anden proces.}{Ibid. s. 10}
 Naur fremhæver to centrale aspekter ved denne definition, først og fremmest
 dens notoriske vaghed: netop det faktum at ``data'' kan dække over en
 mangfoldighed af fænomener. En anden central egenskab ved databegrebet er dets 
 intime forbindelse til processer: \citat{En ting eller begivenhed er ikke i sig 
 selv data, men bliver det først når den indgår i en proces hvori dens repræsentation 
-af fakta og idéer er det afgørende}{Ibid., s. 11} Studiet af data består således i
+af fakta og idéer er det afgørende.}{Ibid., s. 11} Studiet af data består således i
 høj grad af undersøgelser af hvordan selve dataet optimeres til at blive behandles
 processuelt. Naur udtrykker det: \citat{Sagen er at den lethed 
 hvormed vi kan gennemføre en given dataproces i høj grad afhænger af præcis hvilke
 data vi har valgt til at repræsentere virkeligheden, eller som jeg kort vil sige,
-af \emph{datarepræsentationen}.}{Ibid., s. 12}. 
+af \emph{datarepræsentationen}.}{Ibid., s. 12}
 
 \subsection{Datalogi i forhold til Computer Science}
 Datalogi er således studiet af data og dets organisation - dette er som sådan 
@@ -94,7 +86,6 @@ Dette bliver i datalogien tæt knyttet til fremkomsten af datamater, eftersom
 netop disse \citat{befrier [...] os for fordomme om at arbejdet med en bestemt given
 problemstilling er knyttet til en bestemt datarepræsentation}{Ibid., s. 14} 
 
-\paragraph{}
 Sammenligner man denne defintion med den liste af generelle datalogiske vidensområder
 der skitseres af ACM i 2008 \footnote{Computer Science Curriculum 2008, kap. 3.2.1} er det 
 tydeligt at et grundlæggende skift i opfattelsen af datalogifaget er foregået. Ud af
@@ -110,9 +101,8 @@ trådt i baggrunden for en mere konkret og teknisk tilgang til faget.
 \subsection{Applikationsorientering}
 En lighed mellem den måde datalogi fremlægges på i de tidlige tekster, i forhold
 til hvordan det fremlægges af ACM, er at begge lægger vægt på den
-applikationsorienterede tilgang til faget.
-
-Omhandlede undervisningen på DIKU i 1970 (da DIKU blev oprettet), beskrives:
+applikationsorienterede tilgang til faget. Omhandlede undervisningen på DIKU i 
+1970'erne, beskrives:
 \citat{Through their project work, which occupies half of their study time, the
     students get the opportunity to use theoretically learned material to solve
     actual problems.}{Datalogy -- The Copenhagen Tradition of Computer

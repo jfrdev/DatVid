@@ -116,38 +116,10 @@ måder at programmere på, om hvis man vælger at programmere en til en løsning
 ikke bliver til noget, skal man starte forfra (Et problem der ifølge artiklen
 forskes i at løse på DIKU).
 
-\section{Kvantecomputeren vs. den fysiske Turingmaskine}
-Til at beskrive computeren som beregningsenhed og matematisk fænomen
-benyttes traditionelt en model defineret i 1936 af matematikeren Alan Turing. 
-Denne maskine (Turingmaskinen) vil ikke blive beskrevet i detaljer
-her\footnote{For en nærmere beskrivelse se artiklen \textit{Quantum Computing}.}
-- det essentielle ved Turingmaskinen er for os de implikationer modellen har
-for selve begrebet beregnelighed. Hagar udtrykker det:
-
-\citat{That the Turing machine model (what we now call "an algorithm") captures
-the concept of computability in its entirety is the essence of the Church-Turing
-thesis, according to which any effectively calculable function can be computed 
-using a Turing machine.}
-{\textit{Quantum Computing}, s. 3}
-
-Turing-modellen kan også tænkes som en fysisk model, såfremt man 
-omsætter fysikkens centrale parametre (tid og rum) til deres 
-abstrakte beregningsmæssige sidestykker (hukommelse og antal 
-af beregningstrin)\footnote{Se Ibid. s. 5}. 
-De problemer der kan løses af en klassisk Turingmaskine falder i 
-to klasser \footnote{Betegnet hhv. P og NP - en nærmere diskussion
-af disse udelades her men behandles i Ibid. s. 4} afhængigt af hvor
- effektivt de kan løses:\emph{Medgørlige} problemer kan beregnes i
- polynomiel tid af en Turingmaskine, hvor \emph{umedgørlige} problemer
-kun kan løses i exponentiel tid. 
-
-Det har hidtil vist sig umuligt at finde en klassisk fysisk simulation 
-af Turingmaskinen som er i stand til at løse umedgørlige problemer
-mere effektivt end denne nedre grænse. Med dette for øje forsøger man 
-nu at etablere en model som bygger på et andet fysisk fundament, navnligt
-kvantemekanikken. 
-
-\subsection{Hvad er en kvantecomputer?}
+\subsection{Kvantecomputeren vs. den fysiske Turingmaskine}
+I teksten \textit{Quantum Computing} beskrives fremkomsten og udviklingen 
+af den kvantemekaniske computer, samt de typer af problemer den tænkes at
+kunne løse.
 Kvantecomputeren er grundlæggende set en en teoretisk maskinemodel\footnote{
 Introduceret første gang i 1982 af fysikeren Richard Feynman} som benytter 
 elementer fra kvantemekanikken (superpositioner, \textit{entanglements}) til 
@@ -159,8 +131,7 @@ tal (hvis eneste mulige tilstande er 1 og 0) opererer kvantecomputeren på qubit
 begge tilstande. Dette har bl.a. signifikante implikationer for lagring, da én qubit 
 kan lagre sit data i flere tilstande simultant: 
 \citat{[...] the amount of information that can be stored in a system of  
-\textit{n} unmeasured qubits grows exponentially in \textit{n}}{Ibid. s. 9}
-
+\textit{n} unmeasured qubits grows exponentially in \textit{n}}{\textit{Quantum Computing} s. 9}
 Som teksten 
 pointerer, bl.a. i udlægningen af de forskellige konkrete kvantealgoritmer, 
 kommer denne forsøgning i mulig lagring ikke uden udgifter - her hovedsageligt 
@@ -269,6 +240,28 @@ kortlægning af hjernen eller udregning af logistiske problemer (som
 Hamilton-sti-problemet, blot større) i forvejen tager meget lang tids udregning.
 
 \section{Diskussion og konklusion}
+<<<<<<< HEAD
+=======
+\section{Diskussion og konklusion}
+Alle fire artikler i nærværende opgave arbejder med et udtalt fokus på
+computeren som en regnemaskine og hvordan dennes effektivitet og lagerkapacitet kan 
+forøges maksimalt. I teksterne omhandlende den klassiske transistorbaserede
+computer tager dette form som et fokus på et beskrive udviklingen til maskiner
+med flere kerner, og hvordan besværet med at udnytte hukommelse i denne forbindelse
+kan bearbejdes. Et andet aspekt i skiftet til talrige kerner er hvordan man bør
+skrive nye algoritmer der optimalt arbejder med de distribuerede resurser. 
+Dette fokus på forøgning af hastighed og beregningskraft er også til stede i
+teksten omhandlende kvantecomputere - her understreges dog også spørgsmålet om 
+hvorvidt en kvantecomputer vil være i stand til at regne typer af problemer som 
+den transistorbaserede (selv med adskillige kerner) ikke formår at regne i 
+polynomiel tid. Lig teksten om klassiske computere fremhæver teksten om 
+kvantecomputere nødvendigheden af at skrive nye algoritmer, som arbejder 
+specifikt for at udnytte mulighederne i den kvantemekaniske computermodel. 
+Også i beskrivelsen af DNA-baseret beregning er de biomolekylære strukturers
+mulighed for at øge speedup af regnekraft i centrum, dog med den essentielle
+hindring at fremstillingen af udprint fra beregningerne er langsomme og 
+omkostningsrige. 
+>>>>>>> 7ebe779ce7ffbb5112ab12b2ae6136ac9764adf9
 
 
 \end{document}

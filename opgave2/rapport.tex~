@@ -200,7 +200,7 @@ muligt korrekte DNA-strenge og bruge magnetisme til at trække dem fra resten af
 mængden. Til sidst var svaret fundet, hvis der var nogen DNA-strenge tilbage. Og
 det var der.
 
-\subsection{Stærke sider}
+\subsection{De stærke sider}
 De stærke sider ved DNA-computeren er dels den utroligt hurtige udregning pga. 
 sin stærkt paralleliserede metode, og dels muligheden for stor datalagring på
 meget begrænset plads. Her nævnes i artiklen at et gram DNA, svarende til en 

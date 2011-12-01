@@ -200,10 +200,10 @@ muligt korrekte DNA-strenge og bruge magnetisme til at trække dem fra resten af
 mængden. Til sidst var svaret fundet, hvis der var nogen DNA-strenge tilbage. Og
 det var der.
 
-\subsection{Stærke sider}
+
 De stærke sider ved DNA-computeren er dels den utroligt hurtige udregning pga. 
-sin stærkt paralleliserede metode, og dels muligheden for stor datalagring på
-meget begrænset plads. Her nævnes i artiklen at et gram DNA, svarende til en 
+sin stærkt paralleliserende metode, og dels pga. den store datalagring på meget 
+begrænset plads. Her nævnes i artiklen at et gram DNA, svarende til en 
 kubikcentimeter i tørret tilstand, kan lagre data svarende til omkring 1
 billion cd'er (hvis en cd svare til ca. 700mb, svare det altså til 700 billioner
 mb data eller 667572021 tb data) hvilket er utroligt sammenlignet med dagens
@@ -243,10 +243,8 @@ kortlægning af hjernen eller udregning af logistiske problemer (som
 Hamilton-sti-problemet, blot større) i forvejen tager meget lang tids
 udregning, hvorfor en begrænsende faktor på en uge kan være en stor forbedring.
 
-Derudover har den stort potentiale som lagerenhed, idet den kan lagre så enorme
-mængder data på meget lidt plads. Derfor kan DNA-computeren fungere
-som langtidslager/server, hvor det kan fungere at det tager en uge (eller
-mere) for at data kan blive hentet ud af lageret igen.
+Derudover har den stort potentiale som lagerenhed, idet den kan lagre så store
+datamængder på så lidt plads.
 
 \flushbottom
 \section{Diskussion og konklusion}

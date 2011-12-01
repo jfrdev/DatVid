@@ -28,12 +28,7 @@ Den første er den traditionelle transistorbaserede computer, den anden er den
 fysikorienterede kvantebaserede computer og den sidste er den
 biologiorienterede molekulære DNA-computer. De adskiller sig alle på både deres
 videnskabelige baggrund, fysiske form, potentialer, muligheder og
-begrænsninger. Idet vi er nået en hvis form for hastighedsbegrænsning med den
-transistorbaserede computer (ift. clock-hastighed og energieffektivitet mod
-varmeafledning), og har mange problemer, der tager meget lang tid at udregne (op
-til årtier), er der selvfølgelig muligheden for at se på alternative computere,
-der måske effektivt kan løse nogle af de problemer, transistorcomputeren ikke
-kan.
+begrænsninger. 
 
 \section{Den transistorbaserede computer}
 \subsection{Situationen før i tiden}
@@ -215,6 +210,6 @@ kortlægning af hjernen eller udregning af logistiske problemer (som
 Hamilton-sti-problemet, blot større) i forvejen tager meget lang tids udregning.
 
 \section{Diskussion og konklusion}
-
-
+bubber was here <3
+bubber was not here.. no, that was somebody else...
 \end{document}

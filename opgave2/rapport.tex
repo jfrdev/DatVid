@@ -37,30 +37,84 @@ kan.
 
 \section{Den transistorbaserede computer}
 \subsection{Situationen før i tiden}
-Den transistorbaserede computer kendes bedre blot som en computer, da almindelige computere i dag alle er transistorbaserede. Hvis man ser på fremtidsudsigterne for denne er flere faktorer afgørende.
+Hvis man først ser på Gordon E. Moores artikel \textit{Cramming more components
+onto integrated circuits} fra 1965, er synet på fremtiden rimelig positivt. Om
+forventningerne skrives bl.a.: \citat{The complexity for minimum component costs
+has increased at a rate of roughly a factor of two per year (see graph on next
+page). Certainly over the short term this rate can be expected to continue, if
+not to increase. [...] there is no reason to believe it will not remain nearly
+constant for at least 10 years. That means by 1975, the number of components per
+integrated circuit for minimum cost will be 65,000. I believe that such a large
+circuit can be built on a single wafer.}{\textit{Cramming more components onto
+integrated circuits}, s. 2}
 
-Hvis man først ser på Gordon E. Moores artikel \textit{Cramming more components onto integrated circuits} fra 1965, er synet på fremtiden rimelig positiv. Om forventningerne skrives bl.a.:
-\citat{The complexity for minimum component costs has increased at a rate of roughly a factor of two per year (see graph on next page). Certainly over the short term this rate can be expected to continue, if not to increase. Over the longer term, the rate of increase is a bit more uncertain, although there is no reason to believe it will not remain nearly constant for at least 10 years. That means by 1975, the number of components per integrated circuit for minimum cost will be 65,000. I believe that such a large circuit can be built on a single wafer.}{\textit{Cramming more components onto integrated circuits}, s. 2}
-
-Her beskrives netop en forventning om, at man vil kunne bygge billigere kredsløb med en større densitet af transistorer, år for år, minimum de næste 10 år. Ser vi på historien har Moores forudsigelse holdt stik, frem til inden for de sidste 10 år ca. hvor man grundet varmeudvikling (hvilket Moore nævner, men ikke mener vil være et problem da han mener man nemt kan komme til at køle overfladen af komponenterne, og da han mener man kan bruge samme mængde strøm til flere transistorer, når afstanden bliver mindre, og derved undgå en større varmeudvikling) har været nødt til at se på andre løsninger end blot at øge antallet af transistorer.
+Her beskrives netop en forventning om, at man vil kunne bygge billigere kredsløb
+med en højere densitet, år for år. Ser vi på historien har Moores forudsigelse h
+oldt stik, frem til inden for de sidste 10 år ca. hvor man grundet
+varmeudvikling (hvilket Moore nævner, men ikke mener vil være et problem) har
+været nødt til at se på andre løsninger end blot at øge antallet af
+transistorer.
 
 \subsection{Situationen i dag}
-For at se hvordan det ser ud for den transistorbaserede computer i dag kan man efterfølgende se på artiklen \textit{Supercomputere -- Mange bække små...} af Brian Vinter, fra 2010. Denne beskriver hvordan vi i dag netop har ramt en mur for hastigheden af en enkelt processor, og hvordan den udvikling som Moore altså snakkede om i 1965 altså ikke længere gælder for hastighed, men kun for antallet af transistorer per chip.
+For at se hvordan det ser ud for den transistorbaserede computer i dag kan man
+efterfølgende se på artiklen \textit{Supercomputere -- Mange bække små...} af
+Brian Vinter, fra 2010. Denne beskriver hvordan vi i dag har ramt en mur
+for hastigheden af en enkelt processor.
 
-Dette skyldes, at det at øge frekvensen yderligere resultere i så høje temperaturer, at man med den tidligere udvikling, i 2007 skulle have en 16 GHz processor med en temperatur på godt og vel 6000 grader celsius. Derfor er denne udvikling stoppet, og i stedet må man kigge nye veje for at fortsætte med at presse ydelse ud af den transistorbaserede computer. Specfikt nævner Vinter at Moores lov (en tommelfinger regel der siger at en transistors størrelse halveres hver 18. måned, og tidligere forudsagde at en CPU's hastighed blev fordoblet hver 18. måned) på sin vis stadig er gyldig, da computere stadig for mere regnekraft i form af flere kerner (læs: regnekraft i form af multitrådning). Om dette siger Vinter dog:
-\citat{Det lugter af et simpelt regnestykke fra folkeskolen: Hvis én mand kan grave en grøft på en time, hvor hurtigt kan to mænd så gøre det? En halv time ville vi nok hurtigt gætte på, men hvad med 1.000 mænd? Kan de gøre det på 3,6 sekunder? Det er klart for enhver, at man ikke kan grave en grøft på 3,6 sekunder – de mange mennesker ville simpelthen stå i vejen for hinanden. Sådan er det også, når vi skal parallelisere computerprogrammer; det kan være meget vanskeligt, selv for de letteste problemer.}{\textit{Supercomputere -- Mange bække små...}, s. 25}
+Dette skyldes, at det at øge frekvensen yderligere resultere i så høje
+temperaturer, at man med den tidligere udvikling, i 2007 skulle have en 16 GHz
+processor med en temperatur på godt og vel 6000 grader celsius. Derfor er denne
+udvikling stoppet, og i stedet må man kigge nye veje for at fortsætte med at
+presse ydelse ud af den transistorbaserede computer.
 
-Med andre ord ligger der altså en ny udfordring i forbindelse med at lave algoritmer og programmer der kan udnytte de mange kerner som computere vil have i fremtiden. Endvidere kommentere Vinter også på det faktum at hukommelsen i en computer i dag ikke kan følge med processoren:
-\citat{Det helt store problem ligger i selve von Neumann-modellen, nemlig i, at CPU’en hele tiden skal læse fra hukommelsen -- og desværre er hukommelsen
-meget langsommere end CPU’en. Hukommelsen i en computer er opbygget i en langsommere teknologi for at kunne presse så meget hukommelse ind som muligt.}{Ibid., s. 26}
+Specfikt nævner Vinter at Moores lov (Som siger at en transistors størrelse
+halveres hver 18. måned, og derfor tidligere også forudsagde at en processors
+hastighed blev fordoblet hver 18. måned) på sin vis stadig er gyldig, da
+computere stadig får mere regnekraft i form af flere kerner. Om dette siger
+Vinter dog:\citat{Det lugter af et simpelt regnestykke fra folkeskolen: Hvis én
+mand kan grave en grøft på en time, hvor hurtigt kan to mænd så gøre det? En
+halv time ville vi nok hurtigt gætte på, men hvad med 1.000 mænd? Kan de gøre
+det på 3,6 sekunder? Det er klart for enhver, at man ikke kan grave en grøft på
+3,6 sekunder – de mange mennesker ville simpelthen stå i vejen for hinanden.
+Sådan er det også, når vi skal parallelisere computerprogrammer; det kan være
+meget vanskeligt, selv for de letteste problemer.}{\textit{Supercomputere --
+Mange bække små...}, s. 25}
 
-Dette løses i dag vha. af en cache-hukommelse, der ligger som lag imellem processoren og hukommelsen, men endvidere taler Vinter om tre alternativer som der i øjeblikket kigges på.
+Med andre ord ligger der altså en ny udfordring i forbindelse med at lave
+algoritmer og programmer der kan udnytte de mange kerner som computere vil have
+i fremtiden. Endvidere kommentere Vinter også på det faktum at hukommelsen i en
+computer i dag ikke kan følge med processoren: \citat{Det helt store problem
+ligger i selve von Neumann-modellen, nemlig i, at CPU’en hele tiden skal læse
+fra hukommelsen -- og desværre er hukommelsen meget langsommere end
+CPU’en}{Ibid., s. 26}
 
-Det første er at gøre hukommelsen hurtigere, ved at benytte sig af en lille men meget hurtig hukommelse til hver processorkerne, og så lade hver af disse have et lille hjælpekomponent som de bruger til at flytte hukommelsen mellem den hurtige og den langsomme hukommelse. Dette er en teknik IBM i øjeblikket kigger på og benyttes bl.a. i Sonys Playstation 3.
+Dette løses i dag vha. af en cache-hukommelse, der ligger som lag imellem
+processoren og hukommelsen, men endvidere taler Vinter om tre alternativer som
+der i øjeblikket kigges på.
 
-Det andet er at gøre hukommelsen hurtigere i gennemsnit (en teknik firmaet NVidia arbejder på). Dette gør de ved at hente mange flere bytes fra hukommelsen af gangen (specifikt 448), og derefter deles disse ud til et tilsvarende antal kerner. Således gøres det op til programmører at skrive programmer der kan benytte dette.
+Det første er at gøre hukommelsen hurtigere, ved at benytte sig af en lille men
+meget hurtig hukommelse til hver processorkerne, og så lade hver af disse have
+et lille hjælpekomponent som de bruger til at flytte hukommelsen mellem den
+hurtige og den langsomme hukommelse. Dette er en teknik IBM i øjeblikket kigger
+på og benyttes bl.a. i Sonys Playstation 3.
 
-Det trejde er at gøre processoren relativt langsommere. Idéen er at når man alligevel skal programmere til flere processorkerner, kan lige så godt skrive programmet til flere end det faktiske antal kerner. Dette kan udnyttes af systemet da processorene gøres langsommere ved at de deles op i virtuelle processorer. Således kan hukommelsen bedre følge med processoren. Dette betyder dog igen når man programmere skal skrive det lige så mange kerner som der er virtuelle kerner.
+Det andet er at gøre hukommelsen hurtigere i gennemsnit (en teknik firmaet
+NVidia arbejder på). Dette gør de ved at hente mange flere bytes fra hukommelsen
+af gangen (specifikt 448), og derefter deles disse ud til et tilsvarende antal
+kerner. Således gøres det op til programmører at skrive programmer der kan
+benytte dette.
+
+Det trejde er at gøre processoren relativt langsommere, ved at opdele den i
+flere virtuelle kerner som arbejder på hver sin opgave. Dette kan udnyttes af
+systemet da processorene gøres langsommere ved at de deles op i virtuelle
+processorer. Således kan hukommelsen bedre følge med processoren. Dette betyder
+dog igen når man programmere skal skrive det lige så mange kerner som der er
+virtuelle kerner.
+
+Det store problem i dissse forskellige teknologier er at de kræver forskellige
+måder at programmere på, om hvis man vælger at programmere en til en løsning der
+ikke bliver til noget, skal man starte forfra (Et problem der ifølge artiklen
+forskes i at løse på DIKU).
 
 \section{Kvantecomputeren vs. den fysiske Turingmaskine}
 Til at beskrive computeren som beregningsenhed og matematisk fænomen

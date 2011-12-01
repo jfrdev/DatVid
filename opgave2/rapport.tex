@@ -26,7 +26,7 @@ Vi har opdelt beskrivelserne af de tre forskellige muligheder for
 implementation af den fysiske computer, som har umiddelbart mest potentiale.
 Den første er den traditionelle transistorbaserede computer, den anden er den
 fysikorienterede kvantebaserede computer og den sidste er den
-biologiorienterede molekulære DNA-computer. De adskiller sig alle på både deres
+biologiorienterede molekylære DNA-computer. De adskiller sig alle på både deres
 videnskabelige baggrund, fysiske form, potentialer, muligheder og
 begrænsninger. Idet vi er nået en hvis form for hastighedsbegrænsning med den
 transistorbaserede computer (ift. clock-hastighed og energieffektivitet mod
@@ -49,8 +49,8 @@ circuit can be built on a single wafer.}{\textit{Cramming more components onto
 integrated circuits}, s. 2}
 
 Her beskrives netop en forventning om, at man vil kunne bygge billigere kredsløb
-med en højere densitet, år for år. Ser vi på historien har Moores forudsigelse h
-oldt stik, frem til inden for de sidste 10 år ca. hvor man grundet
+med en højere densitet, år for år. Ser vi på historien har Moores forudsigelse
+holdt stik, frem til inden for de sidste 10 år ca. hvor man grundet
 varmeudvikling (hvilket Moore nævner, men ikke mener vil være et problem) har
 været nødt til at se på andre løsninger end blot at øge antallet af
 transistorer.
@@ -116,6 +116,7 @@ måder at programmere på, om hvis man vælger at programmere en til en løsning
 ikke bliver til noget, skal man starte forfra (Et problem der ifølge artiklen
 forskes i at løse på DIKU).
 
+\section{Kvantecomputeren}
 \subsection{Kvantecomputeren vs. den fysiske Turingmaskine}
 I teksten \textit{Quantum Computing} beskrives fremkomsten og udviklingen 
 af den kvantemekaniske computer, samt de typer af problemer den tænkes at
@@ -167,25 +168,24 @@ of what makes a quantum computer quantum.}{Ibid. s. 20}
 
 
 \section{DNA-computeren}
-Den molekulære DNA-computer går kort sagt ud på at bruge DNA-strenge som 
-datamodeller/objekter og bruge deres biologiske egenskaber til 
-dataprocesser/beregninger.
-Det banebrydende eksperiment gik ud på at beregne et lille eksempel på 
-Hamilton-sti-problemet ved hjælp af DNA-strenge og biologiske metoder og 
-processer; bl.a. ``Watson-Crick pairing'' og ``polymerases'' (alle metoder er
-med engelsk navn). Han fulgte algoritmen, hvor man fremstiller en stor mængde
-tilfældige veje mellem de mulige knuder, frasortere dem der er for lange og for
-korte, ikke starter eller slutter i de givne start- og slutknuder, gennemløber
-samme knude flere gange og dem der ikke gennemløber hver knude. Til sidst, hvis
-der er nogen veje tilbage i mængden, er svaret at der findes en sti fra start-
-til slutknuden der gennemløber alle knuder præcist én gang.
-Hver sti mellem to knuder og hver knude(i artiklen er stier beskrevet som flyruter og knuder 
-som byer) blev beskrevet ved en bestemt kodning af en DNA-streng. 
+Den molekulære DNA-computer går kort sagt ud på at bruge DNA-strenge som
+datamodeller/objekter og bruge deres biologiske egenskaber til
+dataprocesser/beregninger.  Det banebrydende eksperiment gik ud på at beregne et
+lille eksempel på Hamilton-sti-problemet ved hjælp af DNA-strenge og biologiske
+metoder og processer; bl.a. ``Watson-Crick pairing'' og ``polymerases'' (alle
+metoder er med engelsk navn). Han fulgte algoritmen, hvor man fremstiller en
+stor mængde tilfældige veje mellem de mulige knuder, frasortere dem der er for
+lange og for korte, ikke starter eller slutter i de givne start- og slutknuder,
+gennemløber samme knude flere gange og dem der ikke gennemløber hver knude. Til
+sidst, hvis der er nogen veje tilbage i mængden, er svaret at der findes en sti
+fra start- til slutknuden der gennemløber alle knuder præcist én gang.  Hver sti
+mellem to knuder og hver knude(i artiklen er stier beskrevet som flyruter og
+knuder som byer) blev beskrevet ved en bestemt kodning af en DNA-streng.
 Strengen kan symbolsk deles på midten, så knuden har et fornavn, hvor en sti kan
-gå til, og et efternavn, hvor en sti kan gå fra. Ligeledes for en sti, beskriver
-den første ende af strengen knuden, som stien går fra, og den anden ende
-beskriver knuden, som stien går til. Hver DNA-streng har en komplementær
-DNA-streng, dens ``Watson-Crick complement'', hvor f.eks. strengen TCGG er
+gå til, og et efternavn, hvor en sti kan gå fra.  Ligeledes for en sti,
+beskriver den første ende af strengen knuden, som stien går fra, og den anden
+ende beskriver knuden, som stien går til. Hver DNA-streng har en komplementær
+DNA-streng, dens ``Watson-Crick complement'', hvor f.eks.  strengen TCGG er
 komplimentær med strengen AGCC. For hver knude blev den komplimentære streng
 fundet, og sammen med strengene for stierne blev disse produceret (omkring
 $10^{14}$ molekyler pr. streng) og ført til et glas vand, med et par yderligere
@@ -218,6 +218,7 @@ thermodynamics dictates a theoretical maximum of $34*10^{19}$ (irreversible)
 operations per joule (at room temperature). Existing supercomputers are far
 less efficient, executing at most $10^{9}$ operations per
 joule.}{\textit{Computing with DNA}, s. 61}
+
 Altså har den molekulære computere et meget større potentiale for at opnå 
 maksimal energieffektivitet end transistor-computeren.
 
@@ -240,6 +241,7 @@ efter man har trukket penge fra den, mens det for f.eks. beregninger til
 kortlægning af hjernen eller udregning af logistiske problemer (som
 Hamilton-sti-problemet, blot større) i forvejen tager meget lang tids udregning.
 
+\flushbottom
 \section{Diskussion og konklusion}
 Alle fire artikler i nærværende opgave arbejder med et udtalt fokus på
 computeren som en regnemaskine og hvordan dennes effektivitet og lagerkapacitet kan 

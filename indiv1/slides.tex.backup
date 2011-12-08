@@ -6,7 +6,6 @@
 \usepackage[danish]{babel}
 \usepackage{libertine}
 \usepackage{graphicx}
-\usepackage{float}
 
 \begin{document}
 \begin{frame}
@@ -50,8 +49,6 @@
 
 \begin{frame}
 \frametitle{Lamdakalkunen}
-\begin{center}
-    \includegraphics[scale=0.5]{lambdakalkun.jpg}
-\end{center}
+    \includegraphics{lambdakalkun.jpg}
 \end{frame}
 \end{document}

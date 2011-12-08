@@ -50,8 +50,6 @@
 
 \begin{frame}
 \frametitle{Lamdakalkunen}
-\begin{center}
-    \includegraphics[scale=0.5]{lambdakalkun.jpg}
-\end{center}
+    \centering \includegraphics[scale=0.5]{lambdakalkun.jpg}
 \end{frame}
 \end{document}

@@ -1,0 +1,86 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[danish]{babel}
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[danish]{babel}
+\usepackage{libertine}
+\usepackage[parfill]{parskip}
+\usepackage{ragged2e}
+
+\widowpenalty=1000
+\clubpenalty=1000
+
+\newcommand{\citat}[2]{\begin{justify}\textit{``#1''}\hspace{0.1cm}\footnote{#2}\end{justify}}
+
+\title{Gruppeopgave 3}
+\author{Henrik Bendt (191191)\\Jens Fredskov (240191)\\Naja Wulff Mottelson (300988)}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{Indledning}
+Første kapitel handler om argumentation og metoder i Erlebens artikel, delt op i et afsnit om selve artiklen og et afsnit om modeller og simuleringer.
+
+Andet kapitel handler om figur 2 og 3 i Nielsens artikel, der handler om maskinlæring og metoder til at lave maskiner der kan forudsige udfald bygget på træningssæt og statistik.
+
+Begge kapitler laver sammenligner med Jaynes ``plausible reasoning'', der bygger på, at alt ikke kan deduceres, men må drage konklusioner bygget på sandsynligheder.
+
+
+
+\section{Argumentation og metoder i Erleben}
+\subsection{Slutningsmetoder i artiklen selv}
+Artiklen indholder et par direkte deduktive argumentationer, som denne:
+I indledningen argumenterer Erleben for, at datalogen kommer både animatoren og ingeniøren til hjælp (syllogi 1--1):
+\\ \textbf{A:} Simulering og modellering er datalogi, og datalogen har skabt modeller og algoritmer for computerprogrammer.
+\\ \textbf{B:} Animatoren og ingeniøren bruger computerprogrammer til simulering og modellering
+\\ \textbf{C:} Derfor kommer datalogen både animatoren og ingeniøren til hjælp.
+
+A og B leder slutningen C. Argumentationen er direkte, men man skal nok forstå et forbehold i, at det ikke nødvendigvis skal være en datalog, der har skabt en given model/algoritme - det kan jo også være en person der ikke er datalog. Men som generelisering, i.e at dataloger blandt andre kommer animatoren og ingeniøren til hjælp, der sand, og argumentationen er i sig selv korrekt.
+
+Disse fylder dog ikke meget i artiklen, hvor slutninger ofte bygges på tidligere slutninger, dvs. at problemet løbende udvides, en slutning findes, men på det opstår et nyt problem. F.eks., når han skriver, at problemet kan beskrives rent matematisk som ligning (13), står der efterfølgende, at "Vores problem er altså nu, at finde den inverse funktion $F^{-1}(*)$. Dette følges op med endnu et problem; nemlig at det ikke altid er praktisk muligt at løse det og at en approksimationsløsning må findes i stedet. Sådan bygges der videre på slutninger, for at nå en ende. Præcis disse slutninger mellem ligningerne kaldes idealiseringer (i artiklen), fordi de er pæne matematiske modeller, der forsøger at beskrive verden. Så han idealisere først problemet, så han når dets kerne, og derpå foretager han en diskretisering, et reelt løsningsforslag til problemet. De bygger altså på syllogi 1--1, hvis A er sand, er B også sand.
+Dette er samme fremgangsmåde, som Jayne beskriver i kapitlet ``Analogies with Physical Theories'', hvor man nedbryder verden (i.e. problemet) i mindre bider, og analysere dem seperat. Herigennem udvikles den inverse ligning, derpå den diskrete løsning for til sidst at omdanne denne til en algoritme, som kan bruges i en computer (i.e. den virkelige verden).
+
+Generelt konkluderer Erleben meget, uden at argumentere for, hvorfor det er korrekt. Dette er ikke uberettiget, idet teksten ville blive markant længere, hvis alt skulle underbygges med argumenter og beviser.
+
+De matematiske beviser er ikke tilstedeværende, og derfor må man blot antage, at ligningerne er korrekt udledte. Alternativt kunne man selv regne på det, og på den anden side er det også irelevant at studere mellemregningerne -- de burde være rigtige. 
+
+\subsection{Slutningsmetoder for modeller og simuleringer}
+Den model der fokuseres mest på i artiklen er stangmodellen. Denne model bygger på den antagelse at en menneskes bevægelse kan beskrives fyldestgørende ved at reducere mennesket til en række stænger. Ud fra denne antagelse bygges modellen så videre vha. matematisk deduktion, eller hvad der svarer til Jaynes syllogi 1--1 og 1--2. Dette gøres, mere specifik, ved først at lægge koordinatsystemer i hvert bevægelsesled af modellen (altså hvor to stænger sidder sammen, svarende til et menneskeligt led). Derved kan man beskrive modellens bevægelse vha. koordinattransformationer.
+
+Der forklares så ud fra denne model om det inverse problem. Dette består i at finde den inverse funktion, da man vha. af denne kan beskrive hvordan man fra et punkt kommer til et andet (f.eks. hvis man skal samle en kop op). Problemet består i at dette ikke altid der kan findes en entydig/optimal løsning. I sådanne tilfælde må man så i stedet benytte sig af at approksimere en optimal løsning. Dette gøres ved at løse et andet problem som som som beskriver den den bevægelse der skal laves for at give den mindste afstand til målet. Dette kan til dels sammenlignes med Jaynes syllogier 1--3 til 1--5 hvor det bliver mere plausibelt at vi kan nå et objekt hvis vi minimere afstanden til det.
+
+Denne fremgangsmåde beskrives af Jayne således:
+\citat{Every time we can construct a mathematical model which reproduces a part of common sense by prescribing a definite set of operations, this shows us how to ``build a machine'' (i.e., write a computer program) which operates on incomplete data and, by applying quantitative versions of the above weak syllogisms, does plausible reasoning instead of deductive reasoning.}{Plausible reasoning, s. 104}
+
+Dette beskrives netop den fremgangsmåde, der tages til problemet, nemlig at approksimere sig frem til en løsning, hvilket svarer til at bruge de svage syllogier iterativt (eller kvantitativ som Jayne kalder det). Denne approksimerede løsning er dog kun brugbar da almen logik (common sense) diktere at det er bedst at minimere afstanden til objektet.
+
+
+
+\section{Figurer i Nielsen}
+Figur 2 beskriver forskellige mulige hypoteserum ved boldkast, og figur 3 beskriver fejlraten, som en funktion af den opsamlede mændge data, i modeller af forskellig kompleksitet.
+
+Hvis træningssættet er meget lille, måske én instans af data, er hypoteserummet tilsvarende lille og indeholder måske én model, der passer 100\% på træningssættet. Dette kan sammenlignes med de deduktive syllogier 1--1 og 1--2, der siger, at A medføre B. Her opfattes A som modellen, og B som træningssættet, så hvis modellen påstår, at næste kast er krone, så er næste kast krone (for at bruge eksemplet fra pdf'en), fordi træningssættet kun indeholder et enkelt muligt kast.
+
+Når træningssættets data stiger, vokser hypoteserummet, hvilket medføre at fejlraten for en model på træningssættet også vokser. Dette gør, at modellen ikke længere er deduktiv, men bygger på sandsynlighed, og må derfor sammenlignes med syllogi 1--3. Sandsynlighedsgraden kan sammenlignes med fejlraten; des større fejlraten bliver, des mere mindre sandsynligt er en given model, i.e. det er sandsynligt at en model passer på noget data, men ikke sikkert. Derfor passer sammenligningen af syllogierne nu både på træningssættet og generaliseringen, der begge bygger på sandsynlighed. Her opfattes A som modellen og B som et udfald hvor modellen enten passer (sand) eller ikke passer (falsk) på data udenfor træningssættet. Derfor, hvis B er sand for noget givent data, bliver sandsynligheden for at modellen passer på al data større.
+
+Dette kan sammenlignes med et citat fra Jayne (bemærk at paranteser er vores kommentare):
+\citat{[...] given a mass of data, comprising 10,000 separate observations (som Nielsen også beskriver, er alle observationer seperate), determine in the light of these data and whatever prior information (træningssættet) is at hand, the relative plausibilities of 100 different possible hypotheses (hypoteserummet) about the causes at work.}{Plausible reasoning, s. 105}
+
+Ud fra denne sammenligning, bruger Jayne syllogi 1--5, som ligeledes passer til Nielsens figurer, til at beskrive sammenhængen mellem data og sandsynlighed:
+
+\citat{[...] what determines [...] whether the plausibility of A increases by a large amount, raising it almost to certainty; or only a negligibly small amount, making the data B almost irrelevant?}{Plausible reasoning, s. 105}
+
+Altså, ud fra input data B, og en model (hypotese) A, skal det vurderes, for alle modeller i hypoteserummet, hvorvidt B gør A mere eller mindre sandsynligt og i hvilken grad dette sker. Maskinlæring, inkl. dette problem, går altså ud på, iflg. Jayne, hvordan en maskine kan laves, så den udføre brugbare og plausible (sandsynlige) handlinger. 
+
+
+
+\section{Konklusion}
+Generelt støtter Erleben sig op ad syllogi 1--1, den almene deduktive argumentationsform. Ud fra denne metode bygger han slutning på slutning for at nå fra den indledende problemfase til den endelige algoritme der kan implementeres på en computer.
+
+Figurerne fra Nielsen lægger sig op ad flere syllogierne, idet der både er en direkte deduktiv udledning på et træningssæt med kun en model, bygget til præcis dette træningssæt, og samtidig, når datasættet udvides, går den deduktive tilgang mod en approximationstilgang, en sandsynlighedsmodel, der prøver at nå det optimale punkt for at kunne forudsige alle kendte og ukendte data. Dette ligner Jaynes ``plausible reasoning'', idet at for hvert forskelligt datasæt som modellen er korrekt for, øges dens generelle sandsynlighed for at være korrekt. Dette følger fejlraten fra modellerne.
+
+Generelt følger Nielsen de principper, som Jayne opstiller i det udsnit vi har fået fra ``Plausible Reasoning'', hvor maskiner, ud fra et hypoteserum og et datasæt skal prøve at agere plausibelt (i.e. menneskeligt i robotsammenhænge) eller sandsynligt (i forudsigelsesproblemet).
+\end{document}
+
